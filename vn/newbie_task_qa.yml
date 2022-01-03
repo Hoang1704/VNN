@@ -1,0 +1,106 @@
+
+qa: 
+  version: '1'
+  question:
+    - id: 1
+      question: '{app_name} là gì?'
+      choices:
+        - 'Một trò chơi'
+        - 'Một ứng dụng nghe nhạc'
+        - 'Một cửa hàng trà sữa'
+        - 'Là một ứng dụng xem nội dung với thuật toán gợi ý thông minh, có thể vừa xem nội dung thú vị vừa kiếm quà tặng'
+      correct: 3
+      type: 1
+    - id: 2
+      question: 'Điểm là gì?'
+      choices:
+        - 'Là một món ăn'
+        - 'Không có nghĩa gì'
+        - 'Có thể nhận được khi xem nội dung hoặc làm nhiệm vụ, đồng thời có thể sử dụng để đổi quà tặng'
+        - 'Vật kỷ niệm'
+      correct: 2
+      type: 1
+    - id: 3
+      question: 'Làm thế nào để nhận quà trên {app_name}?'
+      choices:
+        - 'Xem video'
+        - 'Đọc bài viết'
+        - 'Làm nhiệm vụ'
+        - 'Đăng nhập và sử dụng {app_name} xem bài viết, video, làm nhiệm vụ hoặc giới thiệu với bạn bè đều có thể nhận được điểm thưởng'
+      correct: 3
+      type: 1
+    - id: 4
+      question: 'Tại sao người dùng của {app_name} nhận được rất nhiều quà tặng?'
+      choices:
+        - 'Admin tặng'
+        - 'Lỗi ứng dụng'
+        - 'Sử dụng 24h mỗi ngày'
+        - 'Giới thiệu bạn bè tải {app_name}, mỗi lần giới thiệu thành công có thể nhận đến 6900đ'
+      correct: 3
+      type: 1
+    - id: 5
+      question: 'Làm thế nào để giới thiệu?'
+      choices:
+        - 'Bạn bè chỉ cần tải ứng dụng'
+        - 'Gọi điện giới thiệu với bạn bè'
+        - 'Bạn bè tải ứng dụng qua link giới thiệu của bạn, hoặc tải ứng dụng trên Store và nhập mã giới thiệu của bạn, được coi là giới thiệu thành công'
+        - 'Tự thêm bạn bè'
+      correct: 2
+      type: 1
+    - id: 6
+      question: 'Bạn là?'
+      choices:
+        - 'Nam'
+        - 'Nữ'
+      type: 2
+    - id: 7
+      question: 'Độ tuổi của bạn?'
+      choices:
+        - 'Dưới 18'
+        - '18-20 tuổi'
+        - '20-24 tuổi'
+        - '24-30 tuổi'
+        - '30-40 tuổi'
+        - '40-50 tuổi'
+        - 'Trên 50 tuổi'
+      type: 2
+    - id: 8
+      question: 'Nghề nghiệp của bạn?'
+      choices:
+        - 'Học sinh'
+        - 'Sinh viên'
+        - 'Nhân viên văn phòng'
+        - 'Mẹ bỉm sữa'
+        - 'Công nhân'
+        - 'Nông dân'
+        - 'Free Lancer'
+      type: 2
+    - id: 9
+      question: 'Thu nhập của bạn?'
+      choices:
+        - 'Dưới 5 triệu'
+        - '5-10 triệu'
+        - '10-15 triệu'
+        - '15-20 triệu'
+        - '20-30 triệu'
+        - 'Trên 30 triệu'
+      type: 2
+    - id: 10
+      question: 'Sở thích của bạn?'
+      choices:
+        - 'Đọc sách'
+        - 'Nấu ăn'
+        - 'Xem phim'
+        - 'Vận động'
+        - 'Du lịch'
+        - 'Chơi game'
+        - 'Kết bạn'
+      type: 3
+    - id: 11
+      question: 'Bạn biết đến {app_name} qua hình thức nào?'
+      choices:
+        - 'Quảng cáo'
+        - 'Tìm kiếm'
+        - 'Giới thiệu'
+        - 'Ngẫu nhiên'
+      type: 2

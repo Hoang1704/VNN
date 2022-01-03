@@ -1,0 +1,106 @@
+
+qa:
+  version: '1'
+  question:
+    - id: 1
+      question: 'What is {app_name}'
+      choices:
+        - 'A popular game'
+        - 'A music app'
+        - 'A tea shop'
+        - 'It is an app that recommends news by artificial intelligence. You can also read news and watch videos to earn money and cash out'
+      correct: 3
+      type: 1
+    - id: 2
+      question: 'What is Points'
+      choices:
+        - 'Candy'
+        - 'Useless'
+        - 'Points can collect by read news, watch video or doing task, and can cash out to bank or wallet'
+        - 'Good-looking souvenirs for collection'
+      correct: 2
+      type: 1
+    - id: 3
+      question: 'How to earn money in {app_name}'
+      choices:
+        - 'Only by watching the video'
+        - 'Only by reading news'
+        - 'Only by doing the tasks'
+        - 'Login and read news, watch videos, do tasks, or invite friends, you can collect points and cash out'
+      correct: 3
+      type: 1
+    - id: 4
+      question: 'Why can {app_name} users make a lot of money'
+      choices:
+        - 'Admin give'
+        - 'Application error'
+        - 'Use 24 hours a day'
+        - 'Invite a lot of friends to download {app_name}, you can get up to ₱15 for each friend you invite'
+      correct: 3
+      type: 1
+    - id: 5
+      question: 'How to invite friends'
+      choices:
+        - 'Friends only download the app'
+        - 'Only call to tell friends'
+        - 'Friends download and log in to the app through the link you shared, or download the app from GooglePlay or AppStore and input the invite code'
+        - 'Add friends automatic'
+      correct: 2
+      type: 1
+    - id: 6
+      question: 'Your gender'
+      choices:
+        - 'Male'
+        - 'Female'
+      type: 2
+    - id: 7
+      question: 'Your age'
+      choices:
+        - 'Under 18 years old'
+        - '18-20 years old'
+        - '20-24 years old'
+        - '24-30 years old'
+        - '30-40 years old'
+        - '40-50 years old'
+        - 'Over 50 years old'
+      type: 2
+    - id: 8
+      question: 'Your profession'
+      choices:
+        - 'High school students and below'
+        - 'University student'
+        - 'White collar worker'
+        - 'Housewife'
+        - 'Worker'
+        - 'Farmer'
+        - 'Freelancer'
+      type: 2
+    - id: 9
+      question: 'Your income'
+      choices:
+        - '0 - ₱3,000'
+        - '₱3,000 - ₱5,000'
+        - '₱5,000 - ₱7,000'
+        - '₱7,000 - ₱9,000'
+        - '₱11,000 - ₱13,000'
+        - '₱13,000 pataas'
+      type: 2
+    - id: 10
+      question: 'Your hobby'
+      choices:
+        - 'Reading'
+        - 'Culinary'
+        - 'Watch movie'
+        - 'Sport'
+        - 'Travel'
+        - 'Playing game'
+        - 'Make friends'
+      type: 3
+    - id: 11
+      question: 'How did you know {app_name}'
+      choices:
+        - 'Ad'
+        - 'Website'
+        - 'Friend recommended'
+        - 'Know by accident'
+      type: 2

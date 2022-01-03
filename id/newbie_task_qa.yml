@@ -1,0 +1,116 @@
+
+qa:
+  version: '1'
+  question:
+    - id: 1
+      question: 'Apa itu {app_name}'
+      choices:
+        - 'Adalah permainan populer masa kini'
+        - 'Adalah aplikasi musik favorit anak muda'
+        - 'Adalah toko milk tea'
+        - 'Adalah app berita yang direkomendasikan oleh smart tech, Anda juga dapat menonton video membaca berita dan menghasilkan uang'
+      correct: 3
+      type: 1
+    - id: 2
+      question: 'Apa itu poin'
+      choices:
+        - 'Sebuah permen yang enak'
+        - 'Tidak berguna'
+        - 'Poin dapat diperoleh dengan membaca berita, menonton video atau melakukan tugas, dan dapat ditarik ke rekening bank, dll.'
+        - 'Untuk koleksi dan jadi suvenir yang keren'
+      correct: 2
+      type: 1
+    - id: 3
+      question: 'Bagaimana {app_name} bisa menghasilkan uang'
+      choices:
+        - 'Hanya bisa didapatkan dengan menonton videonya'
+        - 'Hanya bisa didapatkan dengan membaca berita'
+        - 'Hanya bisa didapatkan dengan menyelesaikan tugas'
+        - 'Masuk dan gunakan {app_name} untuk melihat berita, menonton video, melakukan tugas, atau undang teman dan dapatkan poin serta uang tunai'
+      correct: 3
+      type: 1
+    - id: 4
+      question: 'Mengapa pengguna {app_name} dapat menghasilkan banyak uang'
+      choices:
+        - 'Diberikan oleh administrator'
+        - 'Aplikasi error'
+        - 'Digunakan 24/7'
+        - 'Mengundang lebih banyak teman untuk mendownload {app_name} dan dapatkan hingga 30 rupiah per-orang'
+      correct: 3
+      type: 1
+    - id: 5
+      question: 'Bagaimana cara mengundang teman'
+      choices:
+        - 'Hanya menyuruh teman mendownload aplikasi'
+        - 'Cukup beritahu teman melalui telepon saja'
+        - 'Teman mendownload dan masuk ke aplikasi melalui link yang Anda bagikan, kemudian masukkan kode undangan langsung, setelah mendownload aplikasi dari Google Play dan AppStore, undangan sudah selesai.'
+        - 'Menambah teman secara otomatis'
+      correct: 2
+      type: 1
+    - id: 6
+      question: 'Jenis kelamin'
+      choices:
+        - 'Pria'
+        - 'Wanita'
+      type: 2
+    - id: 7
+      question: 'umur'
+      choices:
+        - 'Dibawah 18 Tahun'
+        - '18-20 Tahun'
+        - '20-24 Tahun'
+        - '24-30 Tahun'
+        - '30-40 Tahun'
+        - '40-50 Tahun'
+        - '50 Tahun keatas'
+      type: 2
+    - id: 8
+      question: 'Profesi'
+      choices:
+        - 'Siswa sekolah menengah ke bawah'
+        - 'Mahasiswa'
+        - 'Pejabat'
+        - 'Ibu rumah tangga'
+        - 'Karyawan'
+        - 'Petani'
+        - 'Freelancer'
+      type: 2
+    - id: 9
+      question: 'Pendapatan'
+      choices:
+        - '0 - 2.000.000 Rupiah'
+        - '2.000.000 - 4.000.000 Rupiah'
+        - '4.000.000 - 8.000.000 Rupiah'
+        - '8.000.000 - 16.000.000 Rupiah'
+        - '16.000.000 - 24.000.000 Rupiah'
+        - 'di atas 24.000.000 Rupiah'
+      type: 2
+    - id: 10
+      question: 'Hobi'
+      choices:
+        - 'Membaca'
+        - 'Kuliner'
+        - 'Menonton Film'
+        - 'Olahraga'
+        - 'Wisata'
+        - 'Main Game'
+        - 'Menambah Teman'
+      type: 3
+    - id: 11
+      question: 'Mohon sebutkan daerah kamu?'
+      choices:
+        - 'Jabodetabek'
+        - 'Java'
+        - 'Sumatera, Riau'
+        - 'Bali, Nusa Tenggara'
+        - 'Kalimantan, Sulawesi'
+        - 'Papua, Maluku, Others'
+      type: 2
+    - id: 12
+      question: 'Bagaimana anda mengenal {app_name}'
+      choices:
+        - 'Iklan'
+        - 'Dari website'
+        - 'Rekomendasi teman'
+        - 'Tidak sengaja mengenal'
+      type: 2
