@@ -2,6 +2,8 @@
 # importing required libraries
 import mysql.connector
 import yaml
+from googletrans import Translator
+translater = Translator()
 
 dataBase = mysql.connector.connect(
 host ="localhost",
@@ -26,16 +28,17 @@ cursorObject.execute("""CREATE TABLE VNN_vn (
     question_id INT NOT NULL,
     question VARCHAR(1000) NOT NULL,
     answer VARCHAR(10000) NOT NULL,
-
+    question_in_english(1000) NOT NULL,
+    answer_in_english(1000) NOT NULL,
     PRIMARY KEY (id)
 )""")
 def write_data(country, question_id, question, answer):
     # preparing a cursor object
     cursorObject = dataBase.cursor()
   
-    sql = "INSERT INTO VNN_vn (country, question_id, question, answer)\
-    VALUES (%s, %s, %s, %s)"
-    val = (country, question_id, question, answer)
+    sql = "INSERT INTO VNN_vn (country, question_id, question, answer, question_in_english, answer_in_english)\
+    VALUES (%s, %s, %s, %s, %s, %s)"
+    val = (country, question_id, question, answer, question_in_english, answer_in_english)
 
     cursorObject.execute(sql, val)
     dataBase.commit()
@@ -49,9 +52,11 @@ for i in range (0,11):
     country = 'vn'
     question_id = prime_service["qa"]["question"][i]["id"]
     answer = ''
+    question_in_english = translater.translate(question, dest="en", src="vn")
     for j in range(0,len(prime_service["qa"]["question"][i]["choices"])): 
         answer = prime_service["qa"]["question"][i]["choices"][j]
-        write_data(country, question_id, question, answer)
+        answer_in_english = translater.translate(answer, dest="en", src="vn")
+        write_data(country, question_id, question, answer, question_in_english, answer_in_english)
 #th
 
 with open('th/newbie_task_qa.yml', 'r') as file:
@@ -60,10 +65,12 @@ for i in range (0,11):
     question = prime_service["qa"]["question"][i]["question"]
     country = 'th'
     question_id = prime_service["qa"]["question"][i]["id"]
-    answer = ''
+    answer= ''
+    question_in_english = translater.translate(question, dest="en", src="th")
     for j in range(0,len(prime_service["qa"]["question"][i]["choices"])): 
         answer = prime_service["qa"]["question"][i]["choices"][j]
-        write_data(country, question_id, question, answer)
+        answer_in_english = translater.translate(answer, dest="en", src="th")
+        write_data(country, question_id, question, answer, question_in_english, answer_in_english)
 
 #ph
 
@@ -74,9 +81,11 @@ for i in range (0,11):
     country = 'ph'
     question_id = prime_service["qa"]["question"][i]["id"]
     answer = ''
+    question_in_english = translater.translate(question, dest="en", src="ph")
     for j in range(0,len(prime_service["qa"]["question"][i]["choices"])): 
         answer = prime_service["qa"]["question"][i]["choices"][j]
-        write_data(country, question_id, question, answer)
+        answer_in_english = translater.translate(answer, dest="en", src="ph")
+        write_data(country, question_id, question, answer, question_in_english, answer_in_english)
 
 #id
 
@@ -87,6 +96,8 @@ for i in range (0,11):
     country = 'id'
     question_id = prime_service["qa"]["question"][i]["id"]
     answer = ''
+    question_in_english = translater.translate(question, dest="en", src="id")
     for j in range(0,len(prime_service["qa"]["question"][i]["choices"])): 
         answer = prime_service["qa"]["question"][i]["choices"][j]
-        write_data(country, question_id, question, answer)
+        answer_in_english = translater.translate(answer, dest="en", src="id")
+        write_data(country, question_id, question, answer, question_in_english, answer_in_english)
