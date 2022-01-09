@@ -97,16 +97,6 @@ qa:
         - 'Menambah Teman'
       type: 3
     - id: 11
-      question: 'Mohon sebutkan daerah kamu?'
-      choices:
-        - 'Jabodetabek'
-        - 'Java'
-        - 'Sumatera, Riau'
-        - 'Bali, Nusa Tenggara'
-        - 'Kalimantan, Sulawesi'
-        - 'Papua, Maluku, Others'
-      type: 2
-    - id: 12
       question: 'Bagaimana anda mengenal {app_name}'
       choices:
         - 'Iklan'
